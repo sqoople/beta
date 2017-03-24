@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <title>Une épargne près de chez vous</title>
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/Users/sameserge/Desktop/website/main.css">
+        <link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"  type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,200i,300,400,500,600,700,900" rel="stylesheet">
+    </head>
+<body data-spy="scroll" data-target="#buffysummers" data-offset="50"> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script  type="text/javascript" src="/Users/sameserge/Desktop/website/jq/poncho.js"></script>
+   <header>  
+    <nav id="header-nav" class="navbar navbar-default voldemort">
+       <div class="container-fluid">
+        <div class="navbar-header">
+           <a href="index.html" class="pull-left">
+                <div  alt="logo"><img id="logo" class="logotop" src="logo.png" alt=""></div>
+            </a>   
+            
+             <div id="nav-search-wrapper">
+            <form id="moteur_recherche" method="GET" action="index.html"> <!--indique--dans--lurl--ou--aller--chercher--les elements--><!--TOP--NAV HTML-->  
+            <input id="nav-search"  type="text" name="ouinvestir"  placeholder ="Où voulez vous investir ?" onkeyup="showTime()">
+            </form>
+                
+            </div> 
+        
+        
+            <button id="topbtn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            
+           </div>
+            <div class="top_location">
+              <ul id="resultatMotor"  onmousedown="showOff()">
+              <li ><a href="#" class="header">L</a></li>
+              <li><a href="#"class="batman">levallois-Perret<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+
+              <li><a href="#" class="header">M</a></li>
+             <li><a href="#"class="batman">montreuil<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                  
+             <li><a href="#" class="header">P</a></li>
+              <li><a href="#"class="batman">paris<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                <li><a href="#" class="batman">paris 10ème<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                 <li><a href="#" class="batman">paris 11ème<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                 <li><a href="#" class="batman">paris 12ème<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                   <li><a href="#" class="batman">paris 13ème<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                    <li><a href="#" class="batman">paris 14ème<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                   <li><a href="#" class="batman">paris 18ème<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                   <li><a href="#" class="batman">paris 20ème<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                  <li><a href="#" class="batman">puteaux<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                  
+                  <li><a href="#" class="header">R</a></li>
+              <li><a href="#" class="batman">rueil malmaison<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                  
+                <li><a href="#" class="header">S</a></li>
+                <li><a href="#" class="batman">saint-denis<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                  <li><a href="#" class="batman">saint ouen<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+                    <li><a href="#" class="batman">suresnes<i class="fa fa-map-marker pull-right" aria-hidden="true" ></i></a></li>
+            </ul>
+           </div>
+           <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right"  >
+               <li class="visible-xs">
+              <a href="#" class="crochet_gauche">
+                <br class="hidden-xs">Page d'accueil </a>
+            </li>
+                <hr class="visible-xs">
+            
+            <li class="shine">
+              <a href="devenezproprio.html" >
+                <br class="hidden-xs"> Devenez propriétaire <i class="fa fa-home visible-xs pull-right" aria-hidden="true"></i></a>
+            </li>
+           
+            <li class="hidden-xs" onclick="frappe()">
+              <a href="#">
+                <br class="hidden-xs"> Aide</a>
+            </li>
+               
+            <li onclick="barryAllen()">
+              <a href="#">
+               <br class="hidden-xs"> Inscription<i class="fa fa-user visible-xs pull-right" aria-hidden="true"></i></a>
+            </li>
+              
+            <li onclick="lefauve()">
+              <a href="#">
+                <br class="hidden-xs"> Connexion <i class="fa fa-sign-in visible-xs pull-right" aria-hidden="true"></i></a>
+            </li>
+               <hr class="visible-xs">
+               <li class="visible-xs">
+              <a href="#" >
+                <br class="hidden-xs">Aide </a>
+            </li>
+          </ul><!-- #nav-list -->
+              <!-- #introduction page aide --> 
+            <div id="cartonRouge" class="hidden-xs aide_introduction">
+                <div id="arbitre_touche">
+                <a class="arbitre_centrale"><p class="text">Sqoople Help</p></a><i class="fa fa-times pull-right sifflet" aria-hidden="true" onclick="passe()"></i>
+                </div>
+               
+                <div id="doliprane">
+                <ol>
+                <li class="arbitre_assistant"><a href="#" class="tirageMaillot">Je suis un futur propriétaire <i class="fa fa-chevron-right pull-right ballon" aria-hidden="true"></i></a></li>
+                <li class="arbitre_assistant"><a href="#">Je suis un investisseur<i class="fa fa-chevron-right pull-right ballon" aria-hidden="true"></i></a></li>
+                <li class="arbitre_assistant"><a href="#">Je suis un partenaire<i class="fa fa-chevron-right pull-right ballon" aria-hidden="true"></i></a></li>
+                
+                </ol>
+                </div>
+                <div id="aulas">
+                 <div class="arbitre_additionnel">
+                    <a href="#" class="arbitre_surface"> Visiter le centre d'aide</a>
+                    </div>
+                    <div class="lacazette text">
+                    <a class="arbitrage_tele"> Laissez vos remarques</a>
+                    </div>
+                </div>
+                
+            </div>  <!-- #End introduction page aide --> 
+
+               
+        </div><!-- .collapse .navbar-collapse -->
+        
+       </div><!-- .container -->
+        </nav> <!-- #header-nav -->
+
+       
+</header>
+    
+    <div id="main-content" class="container-fluid" onmousedown="showOff()"> <!-- EstimerRevenu page -->
+        <!-- inscription page-->
+               
+<div id="comics" class="ironMan">
+  <div class="doomsday visible-xs">Inscription<span onclick="mrFantastique()" class="missAmerica" title="Close ironMan">&times;</span> 
+        </div>
+  
+  <form class="captainAmerica animate" action="/action_page.php">
+    <div class="wonderWoman"> 
+        <div class="bruceWayne">
+            Inscrivez-vous pour rejoindre les membres de la communauté de confiance Sqoople et vivez une expérience unique : la vôtre.
+        </div>
+        <div id="ultron">
+        <div class="bruceBanner">
+          <div class="inscription_linkedin">
+     <i class="fa fa-linkedin spiderMan" aria-hidden="true"></i><a class="punisher" href="#">Connexion avec Linkedin</a>
+      </div>
+    <div class="inscription_google">
+      <i class="fa fa-google spiderMan" aria-hidden="true"></i><a class="darkseid" href="#">Connexion avec Google</a>
+      </div>
+        </div>
+         <p class="joker">ou</p>
+        
+        <div class="aquaman" onclick="vision()">
+      <span class="glyphicon glyphicon-envelope flash"></span>Inscription avec l'adresse e-mail
+      </div>
+  
+<div class="daredevil">       
+            En créant un compte, j'accepte les
+    <a href="#">les conditions générales d'utilisation de la plateforme</a>&#44; les
+    <a href="#"> conditions de mises en relation avec les partenaires bancaires</a>&#44; et la
+    <a href="#"> politique de remboursement des investisseurs</a> sur la plateforme Sqoople.
+        </div>
+            </div>
+         <div id="pingouin">
+        <div class="blackCanary">
+        Inscrivez-vous avec <a href="#">Facebook</a> ou <a href="#">Google</a>
+            </div>
+             <p class="joker">ou</p>
+        <div class="ghostRider">
+        <input class="galactus rickGrimes" type="text" placeholder="Adresse e-mail" name="email" required autofocus>
+                 
+         
+        <div class="superGirl">
+            <span class="glyphicon glyphicon-envelope sentry"></span>
+            </div>
+        <input class="nickFury rickGrimes" type="text" placeholder="Prénom" name="fullname" required>
+        <div class="superGirl">
+            <span class="glyphicon glyphicon-user sentry"></span>
+             </div>
+        <input class="nickFury rickGrimes" type="text" placeholder="Nom" name="firstname" required>
+        <div class="superGirl">
+            <span class="glyphicon glyphicon-user sentry"></span>
+            </div>
+        <input class="nickFury rickGrimes" type="password" placeholder="Créer un mot de passe" name="psw" required>
+            <div class="superGirl">
+           <i class="fa fa-key sentry" aria-hidden="true"></i>
+            </div>
+            </div>
+             <span class="naissance"><strong>Date de naissance</strong></span>
+            <i class="fa fa-question-circle" aria-hidden="true" onmouseover="oeildeFaucon()" onmouseout="namor()">  </i>
+              <div id="killerCroc">
+                  <div class="negan">Pour vous inscrire, vous devez être âgé d'au moins 18 ans. Les autres utilisateurs ne verront pas votre date de naissance.
+                  </div>
+             </div>
+             <div class="doubleFace">
+                 <div class="solomonGrundy">
+                    <form action="/action_page.php">
+                    <select class="bullseye" required>
+                      <option value="">Année</option>
+                      <option value="2017">2017</option>
+                      <option value="2016">2016</option>
+                      <option value="2015">2015</option>
+                      <option value="2014">2014</option>
+                      <option value="2013">2013</option>
+                      <option value="2012">2012</option>
+                      <option value="2011">2011</option>
+                      <option value="2010">2010</option>
+                      <option value="2009">2009</option>
+                      <option value="2008">2008</option>
+                      <option value="2007">2007</option>
+                      <option value="2006">2006</option>
+                      <option value="2005">2005</option>
+                      <option value="2004">2004</option>
+                      <option value="2003">2003</option>
+                      <option value="2002">2002</option>
+                      <option value="2001">2001</option>
+                      <option value="2000">2000</option>
+                      <option value="1999">1999</option>
+                      <option value="1998">1998</option>
+                      <option value="1997">1997</option>
+                      <option value="1996">1996</option>
+                      <option value="1995">1995</option>
+                      <option value="1994">1994</option>
+                      <option value="1993">1993</option>
+                      <option value="1992">1992</option>
+                      <option value="1991">1991</option>
+                      <option value="1990">1990</option>
+                      <option value="1989">1989</option>
+                      <option value="1988">1988</option>
+                      <option value="1987">1987</option>
+                      <option value="1986">1986</option>
+                      <option value="1985">1985</option>
+                      <option value="1984">1984</option>
+                      <option value="1983">1983</option>
+                      <option value="1982">1982</option>
+                      <option value="1981">1981</option>
+                      <option value="1980">1980</option>
+                      <option value="1979">1979</option>
+                      <option value="1978">1978</option>
+                      <option value="1977">1977</option>
+                      <option value="1976">1976</option>
+                      <option value="1975">1975</option>
+                      <option value="1974">1974</option>
+                      <option value="1973">1973</option>
+                      <option value="1972">1972</option>
+                      <option value="1971">1971</option>
+                      <option value="1970">1970</option>
+                      <option value="1969">1969</option>
+                      <option value="1968">1968</option>
+                      <option value="1967">1967</option>
+                      <option value="1966">1966</option> 
+                      <option value="1965">1965</option>
+                      <option value="1964">1964</option>
+                      <option value="1963">1963</option>
+                      <option value="1962">1962</option>
+                      <option value="1961">1961</option>
+                      <option value="1960">1960</option>
+                      <option value="1959">1959</option>
+                      <option value="1958">1958</option>
+                      <option value="1957">1957</option>
+                      <option value="1956">1956</option>
+                    </select>
+                    </form>
+                    </div>
+                 
+                <div class="sorciereRouge">
+                  <form action="/action_page.php">
+                    <select class="bullseye" required>
+                      <option value="">Jour</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                     <option value="5">5</option>
+                      <option value="6">6</option>
+                         <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                     <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                       <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    </form>
+                    </div>
+                 
+                 <div class="dickGrayson">
+                  <form action="/action_page.php">
+                    <select class="bullseye" required>
+                      <option value="">Mois</option>
+                      <option value="janvier">janvier</option>
+                      <option value="fevrier">fevrier</option>
+                      <option value="mars">mars</option>
+                      <option value="avril">avril</option>
+                      <option value="mai">mai</option>
+                      <option value="juin">juin</option>
+                      <option value="juillet">juillet</option>
+                      <option value="aout">aout</option>
+                      <option value="septembre">septembre</option>
+                      <option value="octobre">octobre</option>
+                      <option value="novembre">novembre</option>
+                      <option value="décembre">décembre</option>
+                    </select>
+                    </form>
+                    </div>
+             </div> <!--End of Double face-->
+             <div class="docteurStrange">
+                 <input class="docteurFatalis" type="checkbox" checked="checked"> 
+                   Je souhaite recevoir par e-mail des coupons, des promotions, des sondages et les actualités sur Sqoople et ses partenaires.
+                    </div>
+
+            <div class="daredevil">       
+                            En créant un compte, j'accepte les
+                    <a href="#">les conditions générales d'utilisation de la plateforme</a>&#44; les
+                    <a href="#"> conditions de mises en relation avec les partenaires bancaires</a>&#44; et la
+                    <a href="#"> politique de remboursement des investisseurs</a> sur la plateforme Sqoople.
+                </div>
+             <button class="aquaman">Inscription </button>
+                    </div><!--End of pingouin div-->
+    <div class="greenLantern">
+       <div class="deathstroke">Vous avez déjà un compte Sqoople ?</div>
+      <div class="greenArrow" onclick="bane()"><a href="#" class="">Connexion</a></div>
+    </div>
+    </div>
+         
+  </form>
+    
+</div><!-- End Inscription page-->
+        
+    <!-- connexion page-->
+   <div id="xmen" class="magneto">
+  <div class="crapaud visible-xs">Connexion<span onclick="iceberg()" class="dentSabre" title="Close magneto">&times;</span> 
+        </div>
+  
+  <form class="xavier animate" action="/action_page.php">
+    <div class="deadpool"> 
+        <div class="jeanGrey">
+          <button class="connexion_linkedin">
+     <i class="fa fa-linkedin pyro" aria-hidden="true"></i>Connexion avec Linkedin
+      </button>
+    <button class="connexion_google">
+      <i class="fa fa-google pyro" aria-hidden="true"></i>Connexion avec Google
+      </button>
+        </div>
+         <p class="wolwerine">ou</p>
+        <div class="scottSummers">
+            
+   
+      <input class="malicia robertKelly" type="text" placeholder="Adresse e-mail" name="email" required>
+         
+        <div class="jubile">
+            <span class="glyphicon glyphicon-envelope havok"></span>
+            </div>
+              
+      <input class="malicia peterGyrich" type="password" placeholder="Mot de passe" name="psw" required>
+            <div class="jubile">
+           <i class="fa fa-key havok" aria-hidden="true"></i>
+            </div>
+        </div>
+      
+      <input class="leColosse" type="checkbox" checked="checked"> Se souvenir de moi
+        <div class="azazel"><a>Mot de passe oublié ?</a></div>
+        <button class="vifArgent" type="submit">Connexion</button>
+  
+
+    <div class="mystique">
+       <div class="gambit">Vous n'avez pas de compte ?</div>
+      <div class="apocalypse" onclick="thanos()"><a href="#" class="">Inscription</a></div>
+    </div>
+    </div>
+  </form>
+</div>        
+     <!-- End connexion page-->
+<div id="harryPotter" class="jumbotron"><!-- #Hide-Jumbotron -->
+          
+        </div>
+         <div class="albusDumbledore"> <!-- EstimerRevenu titre -->
+            <div class="ginnyWeasley">
+            Economisez de l'argent en devenant propriétaire sur Sqoople&#46;
+            </div>
+            
+            <div class="ronWeasley">
+            Qu'ils souhaitent économiser pour les travaux de leur maison ou réaliser la décoration de la maison de leur rêve, les propriétaires utilisent cette économie de coût pour financer leurs passions.&#46;
+            </div>
+             
+             <div class="hermioneGranger" onclick="barryAllen()">
+              Commencer à acheter
+             </div>
+        </div><!-- EstimerRevenu titre -->
+        
+
+          <!-- nav button -->
+       <div id="buffysummers" class=" navbar-fixed-top hidden-xs" data-spy="affix">
+           
+        <div id="" class="collaporta" onclick="barryAllen()">
+              Commencer à acheter
+             </div>
+           <div id="willowRosenberg">
+           Economisez <span class="alexanderHarris">€</span><span id="jamesDarmody" class="alexanderHarris">15463</span> en devenant propriétaire immédiatement
+           </div>
+        </div>
+   
+       <div id="geoffrey" class=" navbar-fixed-bottom" data-spy="affix" >
+           
+        <div class="allohomora" onclick="barryAllen()">
+              Commencer à acheter
+             </div>
+          
+        </div>
+       <!-- End nav button -->  
+<div id="breakingBad" class="container-fluid"> <!-- application estimation economie -->
+         <div class="row"> 
+                <div class="saulGoodman">
+                 avec <span id="mikeRoss">5</span >&nbsp;<span class="rachelZane">&#37; d&#39;apport </span> en moyenne&#44; vous pourriez économiser 
+                 </div>
+             <div id="walterWhite" >
+              
+            <div id="hankSchrader" class="col-md-3 col-xs-12">
+                <div>
+                <form>
+                <div class="radio">
+                  <label><input id="phoebeBuffay"  type="radio" name="optradio"  onclick="boardwalkEmpire()" value="5" checked>Moins de 5&#37; d&#39;apport</label>
+                </div>
+                <div class="radio">
+                  <label><input id="chandlerBing" type="radio" name="optradio"  onclick="boardwalkEmpire()" value="10">Environ 10&#37; d&#39;apport</label>
+                </div>
+                <div class="radio">
+                  <label><input id="rachelGreen" type="radio" name="optradio"  onclick="boardwalkEmpire()" value="15">Plus de 15&#37; d&#39;apport</label>
+                </div>
+              </form>
+                </div>
+                <div class=""></div>
+                <div class=""></div>
+            </div>
+
+            <div id="skylerWhite" class="col-md-4 col-xs-12">
+                <div class="mikeEhrmantraut"> 
+                    <form>
+                        <input id="nuckyThompson" type="number"  class="gustavoFring"placeholder="ex : un revenu net de 3000€/mois" name="revenue" min="0" max="10000" oninput="boardwalkEmpire()" autofocus>
+
+                    </form>
+                </div>
+                <div class="tucoSalamanca"> 
+                    <form >
+                        <input id="margaretThompson" type="number"  class="gustavoFring"placeholder="ex : un loyer actuel de 1000€/mois " name="loyer" min="0" max="5000" oninput="boardwalkEmpire()">
+
+                    </form>
+                </div>
+                <div class="todd"> 
+                
+                    <form >
+                        <input id="chalkyWhite" type="number"  class="gustavoFring"placeholder="ex : prix du bien à acheter 220000€" name="prixMaison" min="70000" max="1000000"  oninput="boardwalkEmpire()">
+
+                    </form>
+                </div>
+            </div>
+            <div id="jessePinkman" class="col-md-3 col-xs-12">
+                <div  class="harveySpecter"> <span id="gillianDarmody">15463</span><span> €</span><p class="donnaPaulsen">en moyenne en cas d&#39;achat<span class="dissensium " ><a data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Estimation sur la base d'une notation interne . Ce que vous economisez réellement peut varier en fonction de vos revenus, du coût de votre loyer actuel, du coût global de votre projet immobilier ainsi que d'autres facteurs."><i class="fa fa-question-circle jessicaPearson" aria-hidden="true"  ></i></a></span></p> </div>
+                <div  class="louisItt"><span id="agentNelson">1047</span><span> €</span> <p class="donnaPaulsen">Mensualité du crédit<span class="dissensium" ><a data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Ce montant indique une estimation de la mensualité global de votre emprunt pour une maturité moyenne de 18 ans, comprenant également le prêt réalisé par  la communnauté sqoople pour votre apport."><i class="fa fa-question-circle jessicaPearson" aria-hidden="true"  ></i></a></span></p></div>
+            </div>
+        </div>
+             
+        </div>
+    </div> <!-- End application estimation economie -->
+   
+    <div class="severusRogue">EMPRUNTER SON APPORT : COMMENT  ÇA MARCHE ?</div>
+        <!--Etape1---------------------->
+        <div class="doby">
+        
+        </div>
+        
+        <div class="rubeusHagrid">
+                 Inscrivez-vous pour devenir propriétaire
+                 </div>
+          <div class="siriusBlack">
+              Commencez par créer votre annonce. C'est un peu comme le profil de votre projet immobilier.
+        </div>
+         <div class="container-fluid">
+        <div class="row">
+        <div class="jamesPotter">
+                <div id="choixpeau" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12">
+                    <div class="kreatttur"><span class="glyphicon glyphicon-home accio" aria-hidden="true"></span> </div>
+                <div class="lunalovegood">
+                             Qu'est ce qu'il y a dans une annonce ?
+                         </div>
+                        <div class="lugo">Vous remplissez une description,  puis prenez et téléchargez des photos. Votre annonce permet aux investisseurs et aux banques partenaires d'avoir une idée précise du coût de votre projet immobilier.</div>
+                </div>
+            <div id="fleurDelacour" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12">
+                <div class="kreatttur"><i class="fa fa-users accio" aria-hidden="true"></i> </div>
+                <div class="lunalovegood">
+                             Qui peut vous prêter ?
+                         </div>
+                        <div class="choChang">Un parent, un ami, un voisin, ou les millions de francais ayant eu un coup de coeur pour votre projet. A condition d'avoir eu un pré-accord sur le plan de financement global avec une banque partenaire au choix.</div>
+                </div>
+            
+               <div id="victorKrum" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12 hidden-xs">
+                             <div class="kreatttur"><span class="glyphicon glyphicon-info-sign accio" aria-hidden="true"></span> </div>
+                <div class="lunalovegood">
+                              Nous sommes là pour vous aider ?
+                         </div>
+                        <div class="choChang">Sqoople est là pour vous aider pour préparer votre annonce, mais aussi à bien comprendre vos responsabilités aux termes de la législation du crédit&nbsp;: les outils et les Sqooples coach sont là pour vous.</div>
+                </div>
+            
+             <!-- Etape1 display only under xs---------------------->
+            <div class="ritaSkeeter col-sm-12 col-xs-12 col-xxs-12"> 
+                <a href="#GilderoyLockhart" class="" data-toggle="collapse">
+                <div id="nevilleLondubat" onclick="remusLupin()">
+           En savoir plus</div></a>
+                <div id="GilderoyLockhart" class="col-sm-5 col-xs-12 col-xxs-12 collapse">
+                             <div class="kreatttur"><span class="glyphicon glyphicon-info-sign accio" aria-hidden="true"></span>  </div>
+                <div class="lunalovegood">
+                              Nous sommes là pour vous aider ?
+                         </div>
+                        <div class="choChang">Sqoople est là pour vous aider pour préparer votre annonce, mais aussi à bien comprendre vos responsabilités aux termes de la législation du crédit&nbsp;: les outils et les Sqooples coach sont là pour vous.</div>
+            </div>
+            
+            </div> <!-- End Etape1 display only under xs---------------------->
+                  
+             </div>
+              </div>
+              </div>     <!--End Etape1---------------------->
+        <!--Etape2---------------------->
+        <div class="sallyLangstonVp">
+        
+        </div>
+        
+        <div class="rubeusHagrid">
+            Financez votre projet immobilier
+        </div>
+          <div class="siriusBlack">
+              Certains propriétaires empruntent moins de 10% d'apport, d'autres plus. La grande majorité préfèrent  négocier avec l'ensemble des banques partenaires. Vous seul décidez de la façon dont vous financez votre projet.
+        </div>
+         <div class="container-fluid">
+        <div class="row">
+        <div class="jakeBallard">
+                <div id="rowanPope" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12">
+                    <div class="kreatttur"><span class="glyphicon glyphicon-piggy-bank accio" aria-hidden="true"></span> </div>
+                <div class="lunalovegood">
+                              Commencez par l'essentiel 
+                         </div>
+                        <div class="lugo">La plupart des banques partenaires accordent un financement plus attractif&#44;  si vous amenez un apport. Ainsi&#44; déterminez le montant d'apport souhaité et partagez votre projet immobilier avec la communauté sqoople.</div>
+                </div>
+            <div id="harrisonWright" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12">
+                <div class="kreatttur"><i class="fa fa-university accio" aria-hidden="true"></i> </div>
+                <div class="lunalovegood">
+                            Les négociations avec les banques
+                         </div>
+                        <div class="choChang">Negociez vous même avec les banques partenaires. Afin de prendre la meilleure decision beneficiez de ressources, d'outils, commentaires &#40;vérifiés&#41; publier par la communauté et des Sqoople coach &#40;Une équipe d'expert independant à votre disposition&#41;.</div>
+                </div>
+            
+               <div id="marcusWalker" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12 hidden-xs">
+                             <div class="kreatttur"> <span class="glyphicon glyphicon-queen accio" aria-hidden="true"></span></div>
+                <div class="lunalovegood">
+                              Comment les investisseurs prêtent 
+                         </div>
+                        <div class="choChang">En fonction de leur objectif de rendement/risque et de leur recherche de diversification&#44; les investisseurs réalisent leur prêt uniquement sur la plateforme.</div>
+                </div>
+             <!-- Etape2 display only under xs---------------------->
+            <div class="ritaSkeeter col-sm-12 col-xs-12 col-xxs-12">
+                <a href="#peterPettigrow" class="" data-toggle="collapse">
+                <div id="minervaMcGonagall" onclick="gregorovitch()">
+           En savoir plus</div></a>
+                 <div id="peterPettigrow" class="collapse">
+                <div id="abbyWhelan" class="col-sm-5 col-xs-12 col-xxs-12">
+                             <div class="kreatttur"><span class="glyphicon glyphicon-queen accio" aria-hidden="true"></span> </div>
+                <div class="lunalovegood">
+                             Comment les investisseurs prêtent
+                         </div>
+                        <div class="choChang">En fonction de leur objectif de rendement/risque et de leur recherche de diversification, les investisseurs réalisent leur pret uniquement sur la plateforme.</div>
+            </div>
+             <div id="davidRosen" class="col-sm-5 col-xs-12 col-xxs-12 ">
+                             <div class="kreatttur"><span class="glyphicon glyphicon-send accio" aria-hidden="true"></span></div>
+                <div class="lunalovegood">
+                              La transmission des fonds collectés
+                         </div>
+                        <div class="choChang">Les fonds collectés sont directement transmis à la banque partenaire choisie par vos soins.</div>
+            </div>
+             <div id="cyrusBeene" class="col-sm-5 col-xs-12 col-xxs-12 ">
+                             <div class="kreatttur"><i class="fa fa-calculator accio" aria-hidden="true"></i> </div>
+                <div class="lunalovegood">
+                              Le remboursement de l'emprunt.
+                         </div>
+                        <div class="choChang">Afin d'éviter des problématiques budgétaires, le remboursement mensuel de l'emprunt Sqoople et l'emprunt bancaire n'excederont pas le montant recommandé.</div>
+            </div>
+            </div>
+            </div> <!-- End Etape2 display only under xs---------------------->
+       
+                  
+             </div>
+            <!-- Etape2 display only over xs---------------------->
+                 <div id="oliviaPope"> 
+            
+              <div id="fitzgeraldGrant" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12 hidden-xs">
+                             <div class="kreatttur"><span class="glyphicon glyphicon-send accio" aria-hidden="true"></span> </div>
+                <div class="lunalovegood">
+                             La transmission des fonds collectés
+                         </div>
+                        <div class="choChang">Les fonds collectés sont directement transmis à la banque partenaire choisie par vos soins.</div>
+                </div>
+               <div id="MellieGrant" class="col-md-3 col-sm-5 col-xs-12 col-xxs-12 hidden-xs">
+                             <div class="kreatttur"><i class="fa fa-calculator accio" aria-hidden="true"> </i></div>
+                <div class="lunalovegood">
+                              Le remboursement de l'emprunt. 
+                         </div>
+                        <div class="choChang">Afin d'éviter des problématiques budgétaires, le remboursement mensuel de l'emprunt Sqoople et l'emprunt bancaire n'excederont pas le montant recommandé. </div>
+                </div>
+            
+            </div> <!-- End Etape2 display only over xs---------------------->
+            
+              </div>
+              </div> <!--End Etape2---------------------->
+        
+        <!--Etape3---------------------->
+        <div class="tedMosby">
+        
+        </div>
+        
+        <div class="rubeusHagrid">
+            Nous assurons le présent et le futur
+            </div>
+          <div class="siriusBlack">
+             Sqoople a tout prévu pour une meilleure réalisation de vos projets.
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+        
+            <div id="howImetYourMother">
+                <div id="michaelKyle" class="col-lg-2 col-md-4 col-sm-5 col-xs-12 col-xxs-12">
+                <div class="kreatttur"><i class="fa fa-thumbs-o-up accio" aria-hidden="true"></i> </div>
+                <div class="lunalovegood">
+                              Des partenaires solides 
+                         </div>
+                        <div class="lugo">Pour une meilleure réalisation de votre projet immobilier, nous choisissons avec précaution les différents partenaires intervenants sur la plateforme.</div>
+                </div>
+                
+                 <div id="janetKyle" class="col-lg-2 col-md-4 col-sm-5 col-xs-12 col-xxs-12">
+                <div class="kreatttur"><i class="fa fa-shield accio" aria-hidden="true"></i> </div>
+                <div class="lunalovegood">
+                              Assurance emprunteur
+                         </div>
+                        <div class="lugo">Afin de vous garantir une pleine attention des investisseurs sur la plateforme&#44; nous vous recommendons de souscrire à une assurance emprunteur Sqoople.</div>
+                </div>
+                
+                 <div id="claireKyle" class="col-lg-2 col-md-4 col-sm-5 col-xs-12 col-xxs-12 hidden-xs">
+                <div class="kreatttur"><span class="glyphicon glyphicon-link accio" aria-hidden="true"></span> </div>
+                <div class="lunalovegood">
+                             Sqoople repose sur la confiance 
+                         </div>
+                        <div class="lugo">Nous exigeons des informations vérifiées pour nos emprunteurs comme pour nos investisseurs y compris pour les Sqoople coach et les banques partenaires.</div>
+                </div>
+                
+                 <div id="kadyKyle" class="col-lg-2 col-md-4 col-sm-5 col-xs-12 col-xxs-12 hidden-xs">
+                <div class="kreatttur"><i class="fa fa-star-half-o accio" aria-hidden="true"></i> </div>
+                <div class="lunalovegood">
+                             Notation des banques partenaires 
+                         </div>
+                        <div class="lugo">Nous invitons les emprunteurs à évaluer l'échange avec les banques partenaires, afin de faire bénéficier de leur expérience et de sanctionner si nécessaire les acteurs défaillants.</div>
+                </div>
+                <!-- Etape3 display only after xs---------------------->    
+            <div class="ritaSkeeter col-sm-12 col-xs-12 col-xxs-12 visible-xs">
+                <a href="#maFamilleDabord" class="" data-toggle="collapse">
+                <div id="vanessaScott" onclick="calvinScott()">
+           En savoir plus</div></a>
+                 <div id="maFamilleDabord" class="collapse">
+                <div id="tonyJeffers" class="col-sm-5 col-xs-12 col-xxs-12">
+                             <div class="kreatttur"><span class="glyphicon glyphicon-link accio" aria-hidden="true"></span> </div>
+                <div class="lunalovegood"> Sqoople repose sur la confiance 
+                         </div>
+                        <div class="choChang">Nous exigeons des informations vérifiées pour nos emprunteurs comme pour nos investisseurs y compris pour les Sqoople coach et les banques partenaires.</div>
+            </div>
+             <div id="franklinMumford" class="col-sm-5 col-xs-12 col-xxs-12 ">
+                             <div class="kreatttur"> <i class="fa fa-star-half-o accio" aria-hidden="true"></i> </div>
+                <div class="lunalovegood"> Notation des banques partenaires 
+                         </div>
+                        <div class="choChang">Nous invitons les emprunteurs à évaluer l'échange avec les banques partenaires, afin de faire bénéficier de leur expérience et de sanctionner si nécessaire les acteurs défaillants.</div>
+            </div>
+            </div>
+            </div><!-- End Etape3 display only after xs---------------------->
+            </div>
+            </div> 
+            </div> <!--End Etape3---------------------->
+        
+
+      <!--Slider economisez page-->
+
+        <div id="nickyBanks" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Indicators --> 
+            <ol class="carousel-indicators">
+              <li data-target="#nickyBanks" data-slide-to="0" class="active"></li>
+              <li data-target="#nickyBanks" data-slide-to="1"></li>
+                 <li data-target="#nickyBanks" data-slide-to="2"></li>
+                <li data-target="#nickyBanks" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->  
+            <div class="carousel-inner" role="listbox" id="princedebelair">
+                
+              <div id="vivianBanks" class="item active"> <!--first--slider-->
+                <div class="carousel-caption" id="caroutext">
+               <h1 class="willSmith">La confiance</h1>
+                  <p class="carltonBanks">gage de réussite</p>
+                </div>      
+              </div> <!--End first--slider-->
+
+              <div id="ashleyBanks" class="item"> <!--second--slider--> 
+                <div class="carousel-caption " id="caroutext">
+                  <h1 class="willSmith">Remplir</h1>
+                  <p class="carltonBanks">sa description</p>
+                </div>      
+              </div><!--End second--slider-->
+                
+                <!--third--slider-->
+                <div id="philipBanks" class="item"> 
+                <div class="carousel-caption " id="caroutext">
+                  <h1 class="willSmith">Se préparer</h1>
+                  <p class="carltonBanks">pour une rencontre avec les banques partenaires</p>
+                </div>      
+                </div> <!--End third--slider-->
+
+                <div id="hilaryBanks" class="item"> <!--fourth--slider-->
+                <div class="carousel-caption " id="caroutext">
+                  <h1 class="willSmith">Le story telling</h1>
+                  <p class="carltonBanks">pour assurer la réalisation de votre projet immobilier</p>
+                </div> 
+                </div><!--End fourth--slider-->
+
+            
+
+            <!-- Left and right controls -->  
+             <!-- Left controls -->  
+            <a class="left carousel-control" href="#nickyBanks" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+                 <!-- Right controls -->  
+            <a class="right carousel-control" href="#nickyBanks" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a> <!--End left and right controls -->
+        </div>  <!--second--slider-->
+        </div> <!--End Slider--economisez page-->
+        <div id="shooter" > <!--Closing-- page-->
+            <div id="bobLeeSwagger"> 
+                <div id="julieSwagger">
+                    <div class="nadineMemphis"> Préparez vous à rencontrer vos investisseurs</div>
+                <div class="destructum" onclick="barryAllen()"> 
+              Commencer à acheter
+             </div>
+                </div>
+            </div>
+        </div> <!--End Closing-- page-->
+    </div>      <!-- End main content --> <!-- EstimerRevenu page -->
+    <div id="fin_mob"><!-- footer pour mobile -->
+        <hr>
+      <div id="copyright" class="pull-left">&copy; Sqoople, inc</div>
+             
+          <div id="social_network_div">
+              <a href="#"><i class="fa fa-linkedin social_net"></i></a>
+                <a href="#"><i class="fa fa-facebook-official social_net "></i></a>
+                  <a href="#"><i class="fa fa-instagram social_net"></i></a> 
+                    <a href="#"><i class="fa fa-twitter social_net"></i></a> 
+                </div>
+             <div id="conditionplatforme">
+              <a href="" class="lien_mise">Conditions générales d&#39;utilisation&nbsp;de&nbsp;la&nbsp;plateforme</a></div>
+             </div> <!-- End footer pour mobile -->
+    
+    <footer class="panel-footer fantomas" onmousedown="showOff()">
+    <div class="container">
+      <div class="row">
+          <div >
+          <section class="col-lg-3 col-sm-3 col-xs-3"><a href="#main-content"><img id="freretoc" src="logo.png"></a>
+              </section>
+        <section id="company" class="col-lg-2 col-sm-2 col-xs-2">
+          <span><strong>Sqoople</strong></span><br>
+           <a href="#" class="lien_mise">À propos</a><br>
+           <a href="#" class="lien_mise">Carrières</a><br>
+           <a href="#" class="lien_mise">Presse</a><br>
+             <a href="#" class="lien_mise">Blog</a><br>
+             <a href="#" class="lien_mise">Aide</a>
+        </section>
+        <section id="decouvrir" class="col-lg-3 col-sm-3 col-xs-3">
+          <span><strong>Découvrir</strong></span><br>
+          <a href="#" class="lien_mise">Confiance et gestion du risque</a><br>
+            <a href="#" class="lien_mise">Invitez des amis</a><br>
+            <a href="#" class="lien_mise">Soutenir un propriétaire</a><br>
+            <a href="#" class="lien_mise">FAQ</a><br>
+            <a href="#" class="lien_mise">Suggestion</a>
+        </section>
+        <section id="realiser" class="col-lg-3 col-sm-3 col-xs-3">
+         <span><strong>Réaliser</strong></span><br>
+          <a href="#" class="lien_mise">Crédit</a><br>
+            <a href="#" class="lien_mise">Partenaires</a><br>
+            <a href="#" class="lien_mise">Emprunt responsable</a><br>
+             <a href="#" class="lien_mise">Suggestion</a>
+        </section>
+                 </div>
+ 
+         <div id="happyEnd">
+      <div id="copyright" class="pull-left">&copy; Sqoople, inc</div>
+             
+          <div id="social_network_div">
+              
+              <a href="#"><i class="fa fa-linkedin social_net"></i></a>
+                <a href="#"><i class="fa fa-facebook-official social_net"></i></a>
+                  <a href="#"><i class="fa fa-instagram social_net"></i></a> 
+                    <a href="#"><i class="fa fa-twitter social_net"></i></a> 
+              
+                </div>
+             <div id="conditionplatforme">
+              <a href="" class="lien_mise">Conditions générales d&#39;utilisation&nbsp;de&nbsp;la&nbsp;plateforme</a></div>
+             </div>
+       
+          </div>
+        </div>
+    </footer>
+  
+
+    <script type="text/javascript" src="/Users/sameserge/Desktop/website/js/script.js"></script>   
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+</body>
+
+</html>
