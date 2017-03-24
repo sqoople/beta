@@ -1,4 +1,3 @@
-
 /*ESSENTIAL CSS*/
 body {
     font-family:  'Roboto', sans-serif;
@@ -45,8 +44,6 @@ body {
     border-right: 1px solid #CCC;
     vertical-align: middle;
     margin-left: -15px;
-
-
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
@@ -958,7 +955,6 @@ cursor: pointer;
 .mikeFaber {
     color: #fffff2;
     margin-bottom: 15%;
-
 }
 .nazanin {
     position: relative;
@@ -1183,7 +1179,6 @@ cursor: pointer;
     width: 30%;
     margin-right: 30px;
     border: 1px solid #f7f7f7;
-
 }
 
 #agron {
@@ -1208,7 +1203,7 @@ text-decoration: none;
     margin-bottom: 20px;
 }
 .lugo {
-        font-size: 1.1em;
+    font-size: 1.1em;
     margin-bottom: 20px;
 }
 .varro a {
@@ -1251,7 +1246,7 @@ text-decoration: none;
 /**********Estimer revenu titre *********/
 .albusDumbledore {
     position: absolute;
-    color: 	#fffff2;
+    color: #fffff2;
     width: 100%;
     z-index: 200;
     top: 100px;
@@ -1431,7 +1426,7 @@ text-decoration: none;
 .doby {
     width: 26px;
     height: 26px;
-    background-image: url(bullet.svg);
+    background-image: url('website/bullet.svg');
     background-position: center;
     background-size: cover;
     margin-left: 16%;
@@ -1439,7 +1434,7 @@ text-decoration: none;
 .sallyLangstonVp {
     width: 26px;
     height: 26px;
-    background-image: url(Bullet2.svg);
+    background-image: url('website/Bullet2.svg');
     background-position: center;
     background-size: cover;
     margin-left: 16%;
@@ -1447,7 +1442,7 @@ text-decoration: none;
 .tedMosby {
     width: 26px;
     height: 26px;
-    background-image: url(Bullet3.svg) ;
+    background-image: url('website/Bullet3.svg') ;
     background-position: center;
     background-size: cover;
     margin-left: 16%;
@@ -1597,25 +1592,25 @@ text-decoration: none;
     font-size: 2em;
 }
 #vivianBanks {
-    background-image: url(maisondereve1.jpeg);
+    background-image: url('website/maisondereve1.jpeg');
     background-position: center;
     background-size: cover;
     height: 600px;
 }
 #ashleyBanks {
-    background-image: url(votredescription.jpeg);
+    background-image: url('website/votredescription.jpeg');
     background-position: center;
     background-size: cover;
     height: 600px;
 }
 #philipBanks {
-    background-image: url(rencontreBank.jpeg);
+    background-image: url('website/rencontreBank.jpeg');
     background-position: center;
     background-size: cover;
     height: 600px;
 }
 #hilaryBanks {
-    background-image: url(storytelling.jpeg);
+    background-image: url('website/storytelling.jpeg');
     background-position: center;
     background-size: cover;
   height: 600px;
@@ -1841,7 +1836,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron*/ 
 .container-fluid .jumbotron {
-    background: url('dusens.jpg') no-repeat;
+    background: url('website/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 675px;
@@ -1863,7 +1858,7 @@ position: relative;
     position: relative;
     width: 500px;
     height: 250px;
-    background-image: url(familysave.jpg);
+    background-image: url('website/familysave.jpg');
     background-position: center;
     left: 15%;
 }
@@ -1957,15 +1952,15 @@ position: relative;
     height: 300px;
     }
 .saxa {
-    background-image: url(devenezproprio1.jpg);
+    background-image: url('website/devenezproprio1.jpg');
     background-position: center;
     }
 .naevia {
-      background-image: url(locatif1.jpg);
+      background-image: url('website/locatif1.jpg');
      background-position: center;
     }
 .nasir {
-      background-image: url(coproprietaire1.jpg);  
+      background-image: url('website/coproprietaire1.jpg');  
      background-position: center;
     }
 .oenomaus {
@@ -1982,7 +1977,7 @@ position: relative;
 /**********End nav *********/
 /**********Jumbotron *********/
 #harryPotter {
-    background: url('maisondereve3.jpeg') no-repeat;
+    background: url('website/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 675px;
@@ -2060,7 +2055,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url(closing1.jpg);
+    background-image: url('website/closing1.jpg');
     background-position: center;
     background-size: cover;
     width: 80%;
@@ -2221,7 +2216,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron */
 .container-fluid .jumbotron {
-    background: url('dusens.jpg') no-repeat;
+    background: url('website/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 558px;
@@ -2241,7 +2236,7 @@ position: relative;
 #proprietephoto {
     position: relative;
     height: 220px;
-    background-image: url(familysave.jpg);
+    background-image: url('website/familysave.jpg');
     left: 15%;
 }
     
@@ -2343,15 +2338,15 @@ position: relative;
     }
 
 .saxa {
-    background-image: url(devenezproprio2.jpg);
+    background-image: url('website/devenezproprio2.jpg');
     background-position: center;
     }
 .naevia {
-      background-image: url(locatif2.jpg);
+      background-image: url('website/locatif2.jpg');
      background-position: center;
     }
 .nasir {
-      background-image: url(coproprietaire2.jpg);  
+      background-image: url('website/coproprietaire2.jpg');  
      background-position: center;
     }
 .oenomaus {
@@ -2368,7 +2363,7 @@ position: relative;
 /**********End nav 1200q*********/
 /**********Jumbotron 1200q*********/
 #harryPotter{
-    background: url('maisondereve3.jpeg') no-repeat;
+    background: url('website/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 558px;
@@ -2475,7 +2470,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url(closing2.jpg);
+    background-image: url('website/closing2.jpg');
     background-position: center;
     background-size: cover;
     width: 95%;
@@ -2653,7 +2648,7 @@ position: relative;
     
     /* Hide jumbotron */
 #jayPritchett {
-    background: url('dusens.jpg') no-repeat;
+    background: url('website/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 432px;
@@ -2673,7 +2668,7 @@ position: relative;
 #proprietephoto {
     position: absolute;
     height: 170px;
-    background-image: url(familysave.jpg);
+    background-image: url('website/familysave.jpg');
     left: 45%;
     margin-bottom: 15px;
 }
@@ -2786,15 +2781,15 @@ position: relative;
     }
 
 .saxa {
-    background-image: url(devenezproprio3.jpg);
+    background-image: url('website/devenezproprio3.jpg');
     background-position: center;
     }
 .naevia {
-      background-image: url(locatif3.jpg);
+      background-image: url('website/locatif3.jpg');
      background-position: center;
     }
 .nasir {
-      background-image: url(coproprietaire3.jpg);  
+      background-image: url('website/coproprietaire3.jpg');  
      background-position: center;
     }
 .oenomaus {
@@ -2813,7 +2808,7 @@ position: relative;
 /**********End nav 1200q*********/
 /**********Jumbotron 1200q*********/
 #harryPotter {
-    background: url('maisondereve3.jpeg') no-repeat;
+    background: url('website/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 432px;
@@ -2948,7 +2943,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url(closing3.jpg);
+    background-image: url('website/closing3.jpg');
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -3144,7 +3139,7 @@ position: relative;
 
     /* Hide jumbotron */
 #jayPritchett {
-    background: url('dusens.jpg') no-repeat;
+    background: url('website/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 1000px;
@@ -3165,7 +3160,7 @@ position: relative;
     position: absolute;
     width: 75.5%;
     height: 200px;
-    background-image: url(familysave.jpg);
+    background-image: url('website/familysave.jpg');
     left: 12%;
 }
     
@@ -3282,17 +3277,17 @@ position: relative;
     height: 60%;
     }
 .saxa {
-    background-image: url(devenezproprio4.jpg);
+    background-image: url('website/devenezproprio4.jpg');
     background-position: center;
     background-size: cover;
     }
 .naevia {
-      background-image: url(locatif4.jpg);
+      background-image: url('website/locatif4.jpg');
      background-position: center;
     background-size: cover;
     }
 .nasir {
-      background-image: url(coproprietaire4.jpg);  
+      background-image: url('website/coproprietaire4.jpg');  
      background-position: center;
     background-size: cover;
     }
@@ -3436,7 +3431,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url(closing4.jpg);
+    background-image: url('website/closing4.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -3637,7 +3632,7 @@ position: relative;
 /*End contenu de la video */    
  /* Hide jumbotron */
 #jayPritchett {
-    background: url('dusens.jpg') no-repeat;
+    background: url('website/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 720px;
@@ -3738,7 +3733,7 @@ position: relative;
     }
 #proprietephoto_mob {
     width:100%;
-    background-image: url(familysave.jpg);
+    background-image: url('website/familysave.jpg');
     margin-bottom: 0px;
     margin-left: 0px; 
     display: inline-block;
@@ -3777,17 +3772,17 @@ position: relative;
      margin-bottom: 0px;   
     }
 .saxa {
-    background-image: url(devenezproprio5.jpg);
+    background-image: url('website/devenezproprio5.jpg');
     background-position: center;
     background-size: cover;
     }
 .naevia {
-      background-image: url(locatif5.jpg);
+      background-image: url('website/locatif5.jpg');
      background-position: center;
     background-size: cover;
     }
 .nasir {
-      background-image: url(coproprietaire5.jpg);  
+      background-image: url('website/coproprietaire5.jpg');  
      background-position: center;
     background-size: cover;
     }
