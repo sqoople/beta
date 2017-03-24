@@ -874,7 +874,7 @@ cursor: pointer;
 #oliviaKendall { 
     position: relative;
     transform: translateX(0%) translateY(0%);
-    background: url('/website/maison.png') no-repeat;
+    background: url('/images/maison.png') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
@@ -1426,7 +1426,7 @@ text-decoration: none;
 .doby {
     width: 26px;
     height: 26px;
-    background-image: url('/website/bullet.svg');
+    background-image: url('/images/bullet.svg');
     background-position: center;
     background-size: cover;
     margin-left: 16%;
@@ -1434,7 +1434,7 @@ text-decoration: none;
 .sallyLangstonVp {
     width: 26px;
     height: 26px;
-    background-image: url('/website/Bullet2.svg');
+    background-image: url('/images/Bullet2.svg');
     background-position: center;
     background-size: cover;
     margin-left: 16%;
@@ -1442,7 +1442,7 @@ text-decoration: none;
 .tedMosby {
     width: 26px;
     height: 26px;
-    background-image: url('/website/Bullet3.svg') ;
+    background-image: url('/images/Bullet3.svg') ;
     background-position: center;
     background-size: cover;
     margin-left: 16%;
@@ -1592,25 +1592,25 @@ text-decoration: none;
     font-size: 2em;
 }
 #vivianBanks {
-    background-image: url('/website/maisondereve1.jpeg');
+    background-image: url('/images/maisondereve1.jpeg');
     background-position: center;
     background-size: cover;
     height: 600px;
 }
 #ashleyBanks {
-    background-image: url('/website/votredescription.jpeg');
+    background-image: url('/images/votredescription.jpeg');
     background-position: center;
     background-size: cover;
     height: 600px;
 }
 #philipBanks {
-    background-image: url('/website/rencontreBank.jpeg');
+    background-image: url('/images/rencontreBank.jpeg');
     background-position: center;
     background-size: cover;
     height: 600px;
 }
 #hilaryBanks {
-    background-image: url('/website/storytelling.jpeg');
+    background-image: url('/images/storytelling.jpeg');
     background-position: center;
     background-size: cover;
   height: 600px;
@@ -1836,7 +1836,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron*/ 
 .container-fluid .jumbotron {
-    background: url(images/dusens.jpg) no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 675px;
@@ -1858,7 +1858,7 @@ position: relative;
     position: relative;
     width: 500px;
     height: 250px;
-    background-image: url('/website/familysave.jpg');
+    background-image: url('/images/familysave.jpg');
     background-position: center;
     left: 15%;
 }
@@ -1952,15 +1952,15 @@ position: relative;
     height: 300px;
     }
 .saxa {
-    background-image: url('/website/devenezproprio1.jpg');
+    background-image: url('/images/devenezproprio1.jpg');
     background-position: center;
     }
 .naevia {
-      background-image: url('/website/locatif1.jpg');
+      background-image: url('/images/locatif1.jpg');
      background-position: center;
     }
 .nasir {
-      background-image: url('/website/coproprietaire1.jpg');  
+      background-image: url('/images/coproprietaire1.jpg');  
      background-position: center;
     }
 .oenomaus {
@@ -1977,7 +1977,7 @@ position: relative;
 /**********End nav *********/
 /**********Jumbotron *********/
 #harryPotter {
-    background: url('images/maisondereve3.jpeg') no-repeat;
+    background: url('/images/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 675px;
@@ -2055,7 +2055,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url('/website/closing1.jpg');
+    background-image: url('/images/closing1.jpg');
     background-position: center;
     background-size: cover;
     width: 80%;
@@ -2216,7 +2216,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron */
 .container-fluid .jumbotron {
-    background: url(/images/dusens.jpg) no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 558px;
@@ -2236,7 +2236,7 @@ position: relative;
 #proprietephoto {
     position: relative;
     height: 220px;
-    background-image: url('/website/familysave.jpg');
+    background-image: url('/images/familysave.jpg');
     left: 15%;
 }
     
@@ -2338,15 +2338,15 @@ position: relative;
     }
 
 .saxa {
-    background-image: url('/website/devenezproprio2.jpg');
+    background-image: url('/images/devenezproprio2.jpg');
     background-position: center;
     }
 .naevia {
-      background-image: url('/website/locatif2.jpg');
+      background-image: url('/images/locatif2.jpg');
      background-position: center;
     }
 .nasir {
-      background-image: url('/website/coproprietaire2.jpg');  
+      background-image: url('/images/coproprietaire2.jpg');  
      background-position: center;
     }
 .oenomaus {
@@ -2470,7 +2470,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url('/website/closing2.jpg');
+    background-image: url('/images/closing2.jpg');
     background-position: center;
     background-size: cover;
     width: 95%;
@@ -2648,7 +2648,7 @@ position: relative;
     
     /* Hide jumbotron */
 #jayPritchett {
-    background: url(images/dusens.jpg) no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 432px;
@@ -2668,7 +2668,7 @@ position: relative;
 #proprietephoto {
     position: absolute;
     height: 170px;
-    background-image: url('/website/familysave.jpg');
+    background-image: url('/images/familysave.jpg');
     left: 45%;
     margin-bottom: 15px;
 }
@@ -2781,15 +2781,15 @@ position: relative;
     }
 
 .saxa {
-    background-image: url('/website/devenezproprio3.jpg');
+    background-image: url('/images/devenezproprio3.jpg');
     background-position: center;
     }
 .naevia {
-      background-image: url('/website/locatif3.jpg');
+      background-image: url('/images/locatif3.jpg');
      background-position: center;
     }
 .nasir {
-      background-image: url('/website/coproprietaire3.jpg');  
+      background-image: url('/images/coproprietaire3.jpg');  
      background-position: center;
     }
 .oenomaus {
@@ -2808,7 +2808,7 @@ position: relative;
 /**********End nav 1200q*********/
 /**********Jumbotron 1200q*********/
 #harryPotter {
-    background: url('images/maisondereve3.jpeg') no-repeat;
+    background: url('/images/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 432px;
@@ -2943,7 +2943,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url('/website/closing3.jpg');
+    background-image: url('/images/closing3.jpg');
     background-position: center;
     background-size: cover;
     width: 70%;
@@ -3139,7 +3139,7 @@ position: relative;
 
     /* Hide jumbotron */
 #jayPritchett {
-    background: url(/images/dusens.jpg) no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 1000px;
@@ -3160,7 +3160,7 @@ position: relative;
     position: absolute;
     width: 75.5%;
     height: 200px;
-    background-image: url('/website/familysave.jpg');
+    background-image: url('/images/familysave.jpg');
     left: 12%;
 }
     
@@ -3277,17 +3277,17 @@ position: relative;
     height: 60%;
     }
 .saxa {
-    background-image: url('/website/devenezproprio4.jpg');
+    background-image: url('/images/devenezproprio4.jpg');
     background-position: center;
     background-size: cover;
     }
 .naevia {
-      background-image: url('/website/locatif4.jpg');
+      background-image: url('/images/locatif4.jpg');
      background-position: center;
     background-size: cover;
     }
 .nasir {
-      background-image: url('/website/coproprietaire4.jpg');  
+      background-image: url('/images/coproprietaire4.jpg');  
      background-position: center;
     background-size: cover;
     }
@@ -3431,7 +3431,7 @@ position: relative;
 }
 #bobLeeSwagger {
     position: absolute;
-    background-image: url('/website/closing4.jpg');
+    background-image: url('/images/closing4.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -3733,7 +3733,7 @@ position: relative;
     }
 #proprietephoto_mob {
     width:100%;
-    background-image: url('/website/familysave.jpg');
+    background-image: url('/images/familysave.jpg');
     margin-bottom: 0px;
     margin-left: 0px; 
     display: inline-block;
@@ -3772,17 +3772,17 @@ position: relative;
      margin-bottom: 0px;   
     }
 .saxa {
-    background-image: url('/website/devenezproprio5.jpg');
+    background-image: url('/images/devenezproprio5.jpg');
     background-position: center;
     background-size: cover;
     }
 .naevia {
-      background-image: url('/website/locatif5.jpg');
+      background-image: url('/images/locatif5.jpg');
      background-position: center;
     background-size: cover;
     }
 .nasir {
-      background-image: url('/website/coproprietaire5.jpg');  
+      background-image: url('/images/coproprietaire5.jpg');  
      background-position: center;
     background-size: cover;
     }
