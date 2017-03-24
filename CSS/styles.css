@@ -1836,7 +1836,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron*/ 
 .container-fluid .jumbotron {
-    background: url('images/dusens.jpg') no-repeat;
+    background: url(images/dusens.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 675px;
@@ -2216,7 +2216,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron */
 .container-fluid .jumbotron {
-    background: url('/images/dusens.jpg') no-repeat;
+    background: url(/images/dusens.jpg) no-repeat;
     background-size: cover;
     background-position: centre;
     height: 558px;
@@ -2648,7 +2648,7 @@ position: relative;
     
     /* Hide jumbotron */
 #jayPritchett {
-    background: url('images/dusens.jpg') no-repeat;
+    background: url(images/dusens.jpg) no-repeat;
     background-size: cover;
     background-position: centre;
     height: 432px;
@@ -3139,7 +3139,7 @@ position: relative;
 
     /* Hide jumbotron */
 #jayPritchett {
-    background: url('/images/dusens.jpg') no-repeat;
+    background: url(/images/dusens.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 1000px;
