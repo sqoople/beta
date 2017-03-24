@@ -1836,7 +1836,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron*/ 
 .container-fluid .jumbotron {
-    background: url('/website/dusens.jpg') no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 675px;
@@ -1977,7 +1977,7 @@ position: relative;
 /**********End nav *********/
 /**********Jumbotron *********/
 #harryPotter {
-    background: url('/website/maisondereve3.jpeg') no-repeat;
+    background: url('/images/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 675px;
@@ -2216,7 +2216,7 @@ position: relative;
 /* Home Page */
     /* Hide jumbotron */
 .container-fluid .jumbotron {
-    background: url('/website/dusens.jpg') no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 558px;
@@ -2363,7 +2363,7 @@ position: relative;
 /**********End nav 1200q*********/
 /**********Jumbotron 1200q*********/
 #harryPotter{
-    background: url('/website/maisondereve3.jpeg') no-repeat;
+    background: url('/images/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 558px;
@@ -2648,7 +2648,7 @@ position: relative;
     
     /* Hide jumbotron */
 #jayPritchett {
-    background: url('/website/dusens.jpg') no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 432px;
@@ -2808,7 +2808,7 @@ position: relative;
 /**********End nav 1200q*********/
 /**********Jumbotron 1200q*********/
 #harryPotter {
-    background: url('/website/maisondereve3.jpeg') no-repeat;
+    background: url('/images/maisondereve3.jpeg') no-repeat;
     background-size: cover;
     background-position: centre;
     height: 432px;
@@ -3139,7 +3139,7 @@ position: relative;
 
     /* Hide jumbotron */
 #jayPritchett {
-    background: url('/website/dusens.jpg') no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 1000px;
@@ -3632,7 +3632,7 @@ position: relative;
 /*End contenu de la video */    
  /* Hide jumbotron */
 #jayPritchett {
-    background: url('/website/dusens.jpg') no-repeat;
+    background: url('/images/dusens.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 720px;
